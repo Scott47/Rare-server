@@ -24,4 +24,4 @@ class User:
 
     @property
     def __str__(self):
-        return (f'{first_name} {last_name}')
+        return (f'{self.first_name} {self.last_name}')

@@ -73,12 +73,11 @@ class HandleRequests(BaseHTTPRequestHandler):
 
         self.wfile.write(f"{response}".encode())
 
-
-# This function is not inside the class. It is the starting
+    # This function is not inside the class. It is the starting
 # point of this application.
 def main():
     host = ''
-    port = 8000
+    port = 8088
     HTTPServer((host, port), HandleRequests).serve_forever()
 
 if __name__ == "__main__":
